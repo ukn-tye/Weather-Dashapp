@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap'); 
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Quicksand';
+	letter-spacing: -1px;
+}
+
+.space {
+	font-family: 'Space Grotesk';
+}
+
+.card {
+	border-radius: 27px;
+}
+
+:root {
+	--whaleBlue: #b4d9ee;
+	--mediumGrey: #323232;
+	--darkGrey: #1b1a1d;
+	--aboveDark: #1b1a1d;
+}
+
+.bg-whaleblue {
+	background: var(--whaleBlue);
+}
+.bg-mediumGrey {
+	background: var(--mediumGrey);
+}
+
+.bg-darkGrey {
+	background: #2f2f2f;
+}
+
+input {
+	border-radius: 40px;
+	width: 120px;
+}
+
+.btn {
+	border-radius: 40px;
+}
+
+.form-control {
+	border-radius: 40px;
+	background: var(--mediumGrey);
+	border: 1px solid var(--mediumGrey);
+	height: 45px;
+
+}
+
+::placeholder {
+	color: white;
+	opacity: 1;
+}
+
+.logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+
+.logo img {
+	height: 55px;
+	width: auto;
+}
+
+body {
+	background: var(--darkGrey);
+}
+
+.small-font {
+	font-size: 1.3rem;
+}
+
+.navbar {
+	background: var(--darkGrey);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar a {
+	height: 35px;
+	width: 35px;
+	padding: 25px;
+	background-color: var(--mediumGrey);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.city {
+	display: flex;
+	align-items: center;
+	color: white;
+}
+
+.city i {
+	font-size: 1.3em;
+	color: white;
+}
+
+.pack-3 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 138px;
+}
+
+.pack-3 img {
+	height: 17px;
+	width: auto;
+}
+
+.little-i {
+	font-size: 16px;
+	color: white;
+}
+
+h1 {
+	font-family: 'Quicksand';
+	text-align: center;
+}
+
+.input-group {
+	width: 100%;
+}
+
+
+.card {
+	margin: 10px;
+}
+.colOne {
+	background: var(--darkGrey);
+}
+.colTwo {
+	background-color: var(--darkGray);
+}
+.histBtnRow {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.green{
+  background-color: lightgreen;
+}
+.yellow{
+  background-color: yellow;
+}
+.orange{
+  background-color: orange;
+}
+.red{
+  background-color: red;
+}
+.purple{
+  background-color: purple;
+}
+.icons {
+	height: 70px;
+	width: 70px;
+}
+.cardTodayDate {
+	font-size: 20px;
+}
