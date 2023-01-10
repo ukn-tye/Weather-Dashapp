@@ -8,24 +8,51 @@
 	letter-spacing: -1px;
 }
 
+.darkMap {
+	width: 800px;
+	border: 1px solid var(--darkGrey);
+	border-radius: 25px;
+}
+
+.map {
+	border-radius: 25px;
+	width: 1300px;
+}
+
+.weather-part img {
+	max-width: 90px;
+}
+
+.white-w {
+	color: white;
+}
+
+.df {
+	display: flex;
+	justify-content: space-between;
+}
+
 .space {
 	font-family: 'Space Grotesk';
 }
 
 .card {
 	border-radius: 27px;
+	width: 250px;
 }
 
 :root {
-	--whaleBlue: #b4d9ee;
+	--vividYellow: #f1c232;
 	--mediumGrey: #323232;
 	--darkGrey: #1b1a1d;
 	--aboveDark: #1b1a1d;
 }
 
 .bg-whaleblue {
-	background: var(--whaleBlue);
+	border: 1px solid var(--vividYellow);
+	background: var(--mediumGrey);
 }
+
 .bg-mediumGrey {
 	background: var(--mediumGrey);
 }
@@ -41,12 +68,13 @@ input {
 
 .btn {
 	border-radius: 40px;
+	border: 1px solid var(--vividYellow)
 }
 
 .form-control {
 	border-radius: 40px;
 	background: var(--mediumGrey);
-	border: 1px solid var(--mediumGrey);
+	border: 1px solid var(--vividYellow);
 	height: 45px;
 
 }
@@ -145,21 +173,7 @@ h1 {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
-.green{
-  background-color: lightgreen;
-}
-.yellow{
-  background-color: yellow;
-}
-.orange{
-  background-color: orange;
-}
-.red{
-  background-color: red;
-}
-.purple{
-  background-color: purple;
-}
+
 .icons {
 	height: 70px;
 	width: 70px;
@@ -167,3 +181,9 @@ h1 {
 .cardTodayDate {
 	font-size: 20px;
 }
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
