@@ -29,8 +29,8 @@ function getHistory() {
 
 	for (let i = 0; i < cityHist.length; i++) {
 
-		var rowEl = $('<row>');
-		var btnEl = $('<button>').text(`${cityHist[i]}`)
+		let rowEl = $('<row>');
+		let btnEl = $('<button>').text(`${cityHist[i]}`)
 
 		rowEl.addClass('row histBtnRow');
 		btnEl.addClass('btn btn-outline-secondary histBtn');
@@ -57,11 +57,11 @@ function getWeather() {
 		$('.cardTime').text(curtime);
 
 		//icons
-		var pEl = $('<p>').text(`Temperature: ${response.main.temp} °F`);
+		let pEl = $('<p>').text(`Temperature: ${response.main.temp} °F`);
 		cardTodayBody.append(pEl);
-		var pElHumid = $('<p>').text(`Humidity: ${response.main.humidity} %`);
+		let pElHumid = $('<p>').text(`Humidity: ${response.main.humidity} %`);
 		cardTodayBody.append(pElHumid);
-		var pElWind = $('<p>').text(`Wind Speed: ${response.wind.speed} MPH`);
+		let pElWind = $('<p>').text(`Wind Speed: ${response.wind.speed} MPH`);
 		cardTodayBody.append(pElWind);
 	});
 	getFiveDayForecast();
@@ -75,8 +75,8 @@ function getFiveDayForecast() {
 		url: getUrlFiveDay,
 		method: 'GET',
 	}).then(function (response) {
-		var fiveDayArray = response.list;
-		var myWeather = [];
+		const fiveDayArray = response.list;
+		const  myWeather = [];
 
 		$.each(fiveDayArray, function (index, value) {
 			testObj = {
@@ -116,7 +116,7 @@ function getFiveDayForecast() {
 			divElBody.append(divElIcon);
 
 			//Temp
-			var pElTemp = $('<p>').text(`${myWeather[i].temp} °F`);
+			const pElTemp = $('<p>').text(`${myWeather[i].temp} °F`);
 			divElBody.append(pElTemp);
 			
 		}
